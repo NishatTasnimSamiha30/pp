@@ -1,0 +1,50 @@
+.body{
+    height: 50px;
+    width: 85%;
+    bottom: 15px;
+    background-color: rgb(255, 253, 250);
+}
+
+.border{
+    border: 1px solid rgb(17, 17, 17);
+    height: 500px;
+    position: relative;
+}
+.headding{
+    color: black;
+    text-align: center;
+    position: relative;
+}
+.wed{
+    background-color: white;
+    padding: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.headding::before{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 85%;
+    top: 15px;
+    right: 7%;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    z-index: -1;
+    border-bottom: 0px;
+}
+.border::after{
+    content: "";
+    position: absolute;
+    height: 50px;
+    width: 85%;
+    bottom: 15px;
+    right: 7%;
+    background-color: transparent;
+    border: 2px solid rgb(0, 0, 0);
+    z-index: -1;
+    border-top: 0px;
+}
+.pic  {
+    height: 30px;
+    width: 20px;
+}
